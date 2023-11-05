@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
-import Image from "next/image"
+import Logo from './logo';
 import { Disclosure } from "@headlessui/react";
 
 const Navbar = () => {
   const navigation = [
-    {title: "Sobre", href: "#about"},
-    {title: "Mackenzie", href: "mackenzie"},
-    {title: "IPE", href: "ipe"},
+    // {title: "Sobre", href: "#about"},
+    // {title: "Mackenzie", href: "mackenzie"},
+    // {title: "IPE", href: "ipe"},
   ];
 
   return (
@@ -23,20 +23,7 @@ shadow-2xl
           {({ open }) => (
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                <Link href="/">
-                  <span className="flex items-center space-x-2 text-2xl font-medium text-gray-700 dark:text-gray-100">
-                    <span>
-                      <Image
-                        src="/joca2.png"
-                        alt="N"
-                        width="120"
-                        height="120"
-                        className="w-8"
-                      />
-                    </span>
-                    <span>Joaquim</span>
-                  </span>
-                </Link>
+                <Logo />
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"

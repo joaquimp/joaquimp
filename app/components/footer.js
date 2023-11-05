@@ -4,6 +4,7 @@ import React from "react";
 import Container from "./container";
 
 import { Twitter, Facebook, Instagram, LinkedIn } from "./social";
+import Logo from "./logo";
 
 export default function Footer() {
   const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
@@ -14,19 +15,7 @@ export default function Footer() {
         <div className="flex flex-wrap justify-between">
           <div className="max-w-xs">
             <div>
-              <Link
-                href="/"
-                className="flex items-center space-x-2 text-2xl font-medium text-gray-700 dark:text-gray-100"
-              >
-                <Image
-                  src="/joca.png"
-                  alt="N"
-                  width="32"
-                  height="32"
-                  className="w-8"
-                />
-                <span>Joaquim</span>
-              </Link>
+              <Logo />
             </div>
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
               “Não havendo sábia direção, cai o povo, mas na multidão de
