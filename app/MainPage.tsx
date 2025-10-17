@@ -7,6 +7,7 @@ export default function MainPage() {
   return (
     <div className="max-w-4xl mx-auto">
       <Navbar />
+      <div></div>
       <div className="flex flex-col gap-y-8 mt-16 px-8">
         <Hero />
 
